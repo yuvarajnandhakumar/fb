@@ -3,36 +3,51 @@
     "line": 2,
     "elements": [
       {
+        "before": [
+          {
+            "result": {
+              "duration": 12586974400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
         "line": 14,
         "name": "Launch Fb",
         "description": "",
         "id": "my-first-feature-file;launch-fb;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 227100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 12561951700,
+              "duration": 2033904300,
               "status": "passed"
             },
             "line": 7,
-            "name": "User launch fb \"https://fb.com\"",
+            "name": "User launch fb",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"https://fb.com\"",
-                  "offset": 15
-                }
-              ],
-              "location": "facebook.user_launch_fb(String)"
+              "location": "facebook.user_launch_fb()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027YUVARAJ\u0027, ip: \u002710.0.75.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_181\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat facebook.launch.facebook.user_enters_and(facebook.java:119)\r\n\tat ✽.user enters \"yuvaraj@gmail.com\" and \"asdf@123\"(src/main/resources/Feature/fb.feature:8)\r\n",
-              "duration": 38358900,
-              "status": "failed"
+              "duration": 4331585300,
+              "status": "passed"
             },
             "line": 8,
             "name": "user enters \"yuvaraj@gmail.com\" and \"asdf@123\"",
@@ -53,8 +68,8 @@
           },
           {
             "result": {
-              "duration": 17300,
-              "status": "skipped"
+              "duration": 1601765100,
+              "status": "passed"
             },
             "line": 9,
             "name": "user click submit button",

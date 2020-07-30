@@ -10,7 +10,7 @@ public class Commonactions {
 	
 	public void launch(String url) {
 		
-		System.setProperty("webdriver.chrome.driver", ".\\driver\\Chrome83\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", ".\\driver\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(url);
