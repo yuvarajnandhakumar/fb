@@ -4,7 +4,7 @@ Feature: My first feature file
   #Background: Chrome launch
   # Given launching chrome browser
   Scenario Outline: Launch Fb
-    Given User launch fb "<url>"
+    Given User launch fb
     And user enters "<username>" and "<password>"
     Then user click submit button
   
