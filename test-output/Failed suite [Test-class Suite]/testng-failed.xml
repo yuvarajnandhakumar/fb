@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Test-class Suite]]">
+  <test thread-count="5" name="Test-class test(failed)(failed)">
+    <parameter name="url" value="https://flipkart.com"/>
+    <classes>
+      <class name="org.testng.priorityClass">
+        <methods>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="launch"/>
+          <include name="quit"/>
+          <include name="run2"/>
+          <include name="run1"/>
+        </methods>
+      </class> <!-- org.testng.priorityClass -->
+    </classes>
+  </test> <!-- Test-class test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Test-class Suite]] -->

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="url" value="https://fb.com"/>
+    <classes>
+      <class name="org.testng.sampletestng">
+        <methods>
+          <include name="run1"/>
+          <include name="run2"/>
+          <include name="launch1"/>
+        </methods>
+      </class> <!-- org.testng.sampletestng -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

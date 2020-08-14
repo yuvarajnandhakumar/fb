@@ -1,0 +1,9 @@
+
+<suite name="Suite">
+  <test name="Test">
+  <parameter name="url" value="https://fb.com"/>
+    <classes>
+      <class name="org.testng.sampletestng"/>
+      </classes>
+  </test> 
+</suite>
