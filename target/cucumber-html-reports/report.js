@@ -1,81 +1,49 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/main/resources/Feature/fb.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/main/resources/Feature/MakemyTrip.feature");
 formatter.feature({
-  "name": "My first feature file",
+  "name": "Make my trip",
   "description": "",
   "keyword": "Feature"
 });
-formatter.scenarioOutline({
-  "name": "Launch Fb",
-  "description": "",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "name": "User launch fb",
-  "keyword": "Given "
-});
-formatter.step({
-  "name": "user enters \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "user click submit button",
-  "keyword": "Then "
-});
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "username",
-        "password",
-        "url"
-      ]
-    },
-    {
-      "cells": [
-        "yuvaraj@gmail.com",
-        "asdf@123",
-        "https://fb.com"
-      ]
-    }
-  ]
-});
 formatter.scenario({
-  "name": "Launch Fb",
+  "name": "Print Location and Flights details in makemytrip",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "User launch fb",
+  "name": "Launch Makemytrip",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "facebook.user_launch_fb()"
+  "location": "MakeMyTrip.launch_Makemytrip()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user enters \"yuvaraj@gmail.com\" and \"asdf@123\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "facebook.user_enters_and(String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click submit button",
+  "name": "Fetch the values of Location, Flight details and Print in console",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "facebook.user_click_submit_button()"
+  "location": "MakeMyTrip.fetch_the_values_of_Location_Flight_details_and_Print_in_console()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Close the Browser",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "MakeMyTrip.close_the_Browser()"
 });
 formatter.result({
   "status": "passed"

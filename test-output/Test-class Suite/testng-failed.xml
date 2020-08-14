@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Test-class Suite]">
+  <test thread-count="5" name="Test-class test(failed)">
+    <parameter name="url" value="https://fb.com"/>
+    <classes>
+      <class name="org.testng.priorityClass">
+        <methods>
+          <include name="zun3"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="launch"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- org.testng.priorityClass -->
+    </classes>
+  </test> <!-- Test-class test(failed) -->
+</suite> <!-- Failed suite [Test-class Suite] -->

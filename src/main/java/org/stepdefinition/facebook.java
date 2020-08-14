@@ -7,6 +7,7 @@ import org.Locators.fbpage;
 import org.commonfunction.Commonactions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
@@ -42,9 +43,9 @@ public class facebook  extends Commonactions{
 		ca.eletobewait();
 		ca.insertText(fb.getPwd(), securedpwd);	
 		ca.eletobewait();
+		
 	}
-
-
+	
 	@Then("user click submit button")
 	public void user_click_submit_button() {
 

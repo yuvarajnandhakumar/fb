@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite1]">
+  <test thread-count="5" name="test1(failed)">
+    <groups>
+      <run>
+        <include name="dhana"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="org.testng.priorityClass">
+        <methods>
+          <include name="run2"/>
+        </methods>
+      </class> <!-- org.testng.priorityClass -->
+    </classes>
+  </test> <!-- test1(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

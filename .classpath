@@ -34,5 +34,8 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/yuvar/Downloads/ss/selenium-java-3.141.59/client-combined-3.141.59.jar"/>
+	<classpathentry kind="lib" path="C:/Users/yuvar/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-support/3.13.0/8b058df4fdc104a1be39a2a99922ceae50c5bf5b/selenium-support-3.13.0.jar" sourcepath="C:/Users/yuvar/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-support/3.13.0/f07384831b0ea7e29460fd1ddb0f62b7f84aeb8f/selenium-support-3.13.0-sources.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

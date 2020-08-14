@@ -6,22 +6,40 @@
         "before": [
           {
             "result": {
-              "duration": 10999014500,
+              "duration": 11515829500,
               "status": "passed"
             },
             "match": {
               "location": "Hooks.beforeScenario()"
             }
+          },
+          {
+            "result": {
+              "duration": 99089700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforescenario(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 249626500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterscenario(Scenario)"
+            }
           }
         ],
-        "line": 14,
-        "name": "Launch Fb",
+        "line": 5,
+        "name": "Print Location and Flights details in makemytrip",
         "description": "",
-        "id": "my-first-feature-file;launch-fb;;2",
+        "id": "make-my-trip;print-location-and-flights-details-in-makemytrip",
         "after": [
           {
             "result": {
-              "duration": 318400,
+              "duration": 261400,
               "status": "passed"
             },
             "match": {
@@ -30,62 +48,52 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 2082379000,
+              "duration": 9058600,
               "status": "passed"
             },
-            "line": 7,
-            "name": "User launch fb",
+            "line": 6,
+            "name": "Launch Makemytrip",
             "match": {
-              "location": "facebook.user_launch_fb()"
+              "location": "MakeMyTrip.launch_Makemytrip()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 4365721600,
+              "duration": 24728300,
               "status": "passed"
             },
-            "line": 8,
-            "name": "user enters \"yuvaraj@gmail.com\" and \"asdf@123\"",
+            "line": 7,
+            "name": "Fetch the values of Location, Flight details and Print in console",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"yuvaraj@gmail.com\"",
-                  "offset": 12
-                },
-                {
-                  "val": "\"asdf@123\"",
-                  "offset": 36
-                }
-              ],
-              "location": "facebook.user_enters_and(String,String)"
+              "location": "MakeMyTrip.fetch_the_values_of_Location_Flight_details_and_Print_in_console()"
             },
-            "keyword": "And "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 790345700,
+              "duration": 649085900,
               "status": "passed"
             },
-            "line": 9,
-            "name": "user click submit button",
+            "line": 8,
+            "name": "Close the Browser",
             "match": {
-              "location": "facebook.user_click_submit_button()"
+              "location": "MakeMyTrip.close_the_Browser()"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "My first feature file",
+    "name": "Make my trip",
     "description": "",
-    "id": "my-first-feature-file",
+    "id": "make-my-trip",
     "keyword": "Feature",
-    "uri": "src/main/resources/Feature/fb.feature",
+    "uri": "src/main/resources/Feature/MakemyTrip.feature",
     "tags": []
   }
 ]
