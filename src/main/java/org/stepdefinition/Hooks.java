@@ -11,7 +11,8 @@ import cucumber.api.java.Before;
 public class Hooks extends Commonactions{
 	
 	Commonactions ca = new Commonactions();
-	private static HtmlReporter HtmlReporter;
+	
+	private static Reporter Reporter;
 	private static boolean isreporterrunning;
 	
 	@Before
@@ -36,20 +37,21 @@ public class Hooks extends Commonactions{
 	{
 		if(!isreporterrunning)
 		{
-			HtmlReporter = new HtmlReporter(".\\target\\extentreport.html");
-			isreporterrunning = true;
+			Reporter = new Reporter (".\\target\\cucumberextentreport.html");
+			isreporterrunning=true;
 		}
 	}
 	
 	@Before
-	public void afterscenario(Scenario scenario)
+	public void afterscenario(Scenario scenario) throws ClassNotFoundException
 	{
 		if(scenario.isFailed())
 		{
+			//ss method
 			System.out.println("take screenshot");
 		}
-		HtmlReporter.createTest(scenario);
-		HtmlReporter.writetoreport();
+		Reporter.createTest(scenario);
+		Reporter.writereport();
 	}
 
 }

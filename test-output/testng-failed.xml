@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
-    <parameter name="url" value="https://fb.com"/>
+    <parameter name="url" value="https://amazon.com"/>
     <classes>
       <class name="org.testng.sampletestng">
         <methods>

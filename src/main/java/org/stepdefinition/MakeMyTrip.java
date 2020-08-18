@@ -19,6 +19,7 @@ public class MakeMyTrip extends Commonactions{
 
 	@Then("Fetch the values of Location, Flight details and Print in console")
 	public void fetch_the_values_of_Location_Flight_details_and_Print_in_console() {
+		driver.quit();
 		
 		List<WebElement> listofele = driver.findElements(By.xpath("//main[@class='landingContainer']/div[3]//div/p/p"));
 		for (WebElement eachvalue : listofele) {
