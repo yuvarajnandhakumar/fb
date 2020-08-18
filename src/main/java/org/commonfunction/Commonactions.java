@@ -44,7 +44,8 @@ public class Commonactions {
 	@DataProvider(name="fetchDatas")
 	public String[][] getData() 
 	{
-	return DataInputProvider.getSheet(wbname);
+		return DataInputProvider.getSheet(wbname);
+
 	}
 			
 	

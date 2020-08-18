@@ -11,25 +11,26 @@ public class TestngFB extends Commonactions{
 	Commonactions ca = new Commonactions();
 	
 	
-	@BeforeClass(groups="common")
+	@BeforeClass()
 	public void setData() 
 	{
 		wbname="Vipin";
-	}
-	
+	}	
 	
 	@Test(dataProvider="fetchDatas")
-	public  void createLead(String uname, String pwd) throws InterruptedException   {
+	public  void createLead(String uname, String pwd,String aa) throws InterruptedException   {
 		
 		ca.launch("https://fb.com");
 		System.out.println("browser maximized");
 		Thread.sleep(2000);	
-	
 		ca.insertText(driver.findElement(By.id("email")), uname);
 		ca.eletobewait();
 		ca.insertText(driver.findElement(By.xpath("//input[@type='password']")),pwd);	
 		ca.eletobewait();
+		System.out.println(aa);
 		
 	}
+	
+	
 
 }

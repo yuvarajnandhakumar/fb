@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 11515829500,
+              "duration": 8455231700,
               "status": "passed"
             },
             "match": {
@@ -15,20 +15,21 @@
           },
           {
             "result": {
-              "duration": 99089700,
-              "status": "passed"
+              "error_message": "java.lang.NullPointerException\r\n\tat org.stepdefinition.Hooks.afterscenario(Hooks.java:53)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\r\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:40)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\r\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:124)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:65)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:133)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)\r\n",
+              "duration": 2020700,
+              "status": "failed"
             },
             "match": {
-              "location": "Hooks.beforescenario(Scenario)"
+              "location": "Hooks.afterscenario(Scenario)"
             }
           },
           {
             "result": {
-              "duration": 249626500,
+              "duration": 96732100,
               "status": "passed"
             },
             "match": {
-              "location": "Hooks.afterscenario(Scenario)"
+              "location": "Hooks.beforescenario(Scenario)"
             }
           }
         ],
@@ -39,7 +40,7 @@
         "after": [
           {
             "result": {
-              "duration": 261400,
+              "duration": 69500,
               "status": "passed"
             },
             "match": {
@@ -52,8 +53,8 @@
         "steps": [
           {
             "result": {
-              "duration": 9058600,
-              "status": "passed"
+              "duration": 38300,
+              "status": "skipped"
             },
             "line": 6,
             "name": "Launch Makemytrip",
@@ -64,8 +65,8 @@
           },
           {
             "result": {
-              "duration": 24728300,
-              "status": "passed"
+              "duration": 4200,
+              "status": "skipped"
             },
             "line": 7,
             "name": "Fetch the values of Location, Flight details and Print in console",
@@ -76,8 +77,8 @@
           },
           {
             "result": {
-              "duration": 649085900,
-              "status": "passed"
+              "duration": 3200,
+              "status": "skipped"
             },
             "line": 8,
             "name": "Close the Browser",

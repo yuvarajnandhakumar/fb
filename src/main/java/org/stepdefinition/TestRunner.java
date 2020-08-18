@@ -17,8 +17,7 @@ import cucumber.api.junit.Cucumber;
 glue="org.stepdefinition",
 dryRun=false,
 plugin={"html:target//Cucumber-html-reports","json:target//reports.json"},
-monochrome=true
-		)
+monochrome=true)
 
 
 public class TestRunner{
